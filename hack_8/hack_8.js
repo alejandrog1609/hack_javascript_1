@@ -10,7 +10,9 @@
  */
 let arr = ["foo","bar","baz","qux","echo"];
 let result = [];
-
+for (let i = 2; i < arr.length; i= i +1) {
+  result.push(arr[i-1].replace("a","@").replace("qux","QUX"))
+ }
 
 //export result
 module.exports = result;

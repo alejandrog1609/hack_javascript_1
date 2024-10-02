@@ -7,8 +7,8 @@
  * output => 2   
  */
 let arr = ["foo","bar","baz","qux","echo"];
-let result = 0;
-
+let result = [];
+result = arr.filter(items => items.startsWith("b")).length;
 
 //export result
 module.exports = result;

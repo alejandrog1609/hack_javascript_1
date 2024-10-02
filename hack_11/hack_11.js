@@ -17,7 +17,25 @@
  */
 let numberArray = [1,2,3,4,5];
 let stringArray = ["foo","bar","baz","qux","echo"]
+let stringinsert = ["h@ck"]
 let result = [];
+for (let i = 0; i < stringinsert.length; i= i +1) {
+  result.push(stringinsert[i])
+ }
+for (let i = 0; i < numberArray.length; i= i +1) {
+  if(i % 2 == 0)
+  result.push(numberArray[i].toString().replace("1","one").replace("3","three").replace("5","five"))
+  else result.push(numberArray[i])
+ }
+ for (let i = 0; i < stringinsert.length; i= i +1) {
+  result.push(stringinsert[i])
+ }
+ for (let i = 0; i < stringArray.length; i++) {
+  result.push(stringArray[i].replace("foo","f00").replace("bar","Bar").replace("baz","b@z").replace("qux","quX").replace("echo","3ch0"))
+ }
+ for (let i = 0; i < stringinsert.length; i= i +1) {
+  result.push(stringinsert[i])
+ }
 
 
 //export result
